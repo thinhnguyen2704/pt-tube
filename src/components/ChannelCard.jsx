@@ -40,4 +40,4 @@ const ChannelCard = ({ channelDetail, marginTop }) => {
 		</CardContent>
 	</Box>
 )}
-export default ChannelCard
+export default ChannelCard;
