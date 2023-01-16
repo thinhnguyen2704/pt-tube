@@ -12,11 +12,11 @@ const SearchFeed = () => {
 	const { searchTerm } = useParams()
 
 	useEffect(() => {
-		fetchFromAPI(`search?part=snippet&q=${searchTerm}&maxResults=20`).then((data) => setVideos(data.items))
+		fetchFromAPI(`search?part=snippet&q=${searchTerm}&maxResults=20`).then((data) => setVideos(data.items));
 	}, [searchTerm]);
 
 	useEffect(() => {
-		fetchFromAPI(`search?part=snippet&q=${selectedCategory}&maxResults=20`).then((data) => setVideos(data.items))
+		fetchFromAPI(`search?part=snippet&q=${selectedCategory}&maxResults=20`).then((data) => setVideos(data.items));
 	}, [selectedCategory]);
 
 	return (
@@ -42,4 +42,4 @@ const SearchFeed = () => {
 	)
 }
 
-export default SearchFeed
+export default SearchFeed;
