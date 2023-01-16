@@ -66,6 +66,10 @@ a {
   transition: all 0.3s ease;
 }
 
+.img{
+	object-fit: contain;
+}
+
 @media screen and (max-width: 900px) {
   .category-btn{
     margin: 10px;
@@ -84,6 +88,6 @@ a {
   }
 
   .search-bar{
-    width:200px;
+    width:100px;
   }
 }
