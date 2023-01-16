@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+	min-width: 365px;
 }
 
 a {
@@ -10,7 +11,7 @@ a {
   color: black;
 }
 
-::-webkit-scrollbar {
+::-webkit-scrollbar {	
   width: 0px;
   height: 5px;
 }
@@ -35,8 +36,11 @@ a {
 }
 
 .react-player {
-  height: 77vh !important;
-  width: 100% !important;
+	position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .search-bar{
@@ -68,7 +72,7 @@ a {
   }
 }
 
-@media screen and (max-width:800px){
+@media screen and (max-width: 800px) {
   .copyright{
     display:none !important;
   }
@@ -79,9 +83,6 @@ a {
     overflow: auto !important;
   }
 
-  .react-player {
-    height: 45vh !important;
-  }
   .search-bar{
     width:200px;
   }
