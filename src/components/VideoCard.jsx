@@ -1,46 +1,34 @@
-import { useState, useEffect } from 'react';
+// import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Typography, Card, CardContent, CardMedia } from '@mui/material';
 import { CheckCircle } from '@mui/icons-material';
 
-import { fetchFromAPI } from '../utils/fetchFromAPI';
-
 const VideoCard = ({ video }) => {
-	// const [videoDetail, setVideoDetail] = useState(null)
-
-	// useEffect(() => {
-	// 	fetchFromAPI(`videos?part=snippet,statistics&id=${video.id.videoId}`)
-	// 	.then((data) => setVideoDetail(data?.items[0]));
-	// }, [video.id.videoId]);
 	return (
-		<Card sx={{ width: { xs: '100%', sm:'358px', md: '320px' }, boxShadow: 'none', borderRadius: '0' }}>
+		<Card sx={{ width: { xs: '100%', sm:'175px', md: '250px' }, boxShadow: 'none', borderRadius: '0', margin:'auto' }}>
 			<Link to={`/video/${video?.id?.videoId}`}>
-				<CardMedia 
-					image={video?.snippet?.thumbnails?.high?.url} 
+				<CardMedia className="video-img"
+					image={video?.snippet?.thumbnails?.medium?.url}
 					alt={video?.snippet?.title}
-					sx={{ width: { xs: '100%', sm:'358px', md: '320px' }, height: 180 }}
+					sx={{ width: { xs: '100%', sm:'175px', md: '250px' }, height:'160px' }}
+					component="img"
 					/>
 			</Link>
-			<CardContent sx={{ backgroundColor: '#1e1e1e', height: '106px' }}>
+			<CardContent sx={{ backgroundColor: '#1e1e1e', height: '60px' }}>
 				<Link to={`/video/${video?.id?.videoId}`}>
-					<Typography variant="subtitle1" fontWeight="bold" color="#FFF" >
+					<Typography variant="subtitle1" fontWeight="bold" color="#FFF">
 						{video?.snippet?.title.slice(0, 30)}
 					</Typography>
 				</Link>	
 				<Link to={`/channel/${video?.snippet?.channelId}`}>
-					<Typography variant="subtitle2" fontWeight="bold" color="gray" >
+					<Typography variant="subtitle2" fontWeight="bold" color="gray">
 						{video?.snippet?.channelTitle}
-						<CheckCircle sx={{ fontSize: 12, color: 'gray', ml: '5px' }} />
+						<CheckCircle sx={{ fontSize: 11, color: 'gray', ml: '5px' }}/>
 					</Typography>
 				</Link>
-				{/* {videoDetail?.statistics?.viewCount && (			
-					<Typography fontSize={12} color="white">
-						{videoDetail?.statistics?.viewCount} views
-					</Typography>
-				)} */}
 			</CardContent>
 		</Card>
 	)
 }
 
-export default VideoCard
+export default VideoCard;
