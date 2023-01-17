@@ -46,7 +46,7 @@ a {
 .search-bar{
   border:none;
   outline:none;
-  width:350px;
+  width:200px;
 }
 
 .category-btn{
@@ -85,9 +85,5 @@ a {
 @media screen and (max-width: 600px) {
   .scroll-horizontal {
     overflow: auto !important;
-  }
-
-  .search-bar{
-    width:100px;
   }
 }
