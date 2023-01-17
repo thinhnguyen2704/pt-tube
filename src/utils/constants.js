@@ -12,8 +12,6 @@ import TheaterComedyIcon from '@mui/icons-material/TheaterComedy';
 import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
 import PianoIcon from '@mui/icons-material/Piano';
 
-export const logo = 'https://i.ibb.co/s9Qys2j/logo.png';
-
 export const categories = [
   { name: 'All', icon: <HomeIcon />, },
   { name: 'ReactJS', icon: <CodeIcon />, },
@@ -30,10 +28,3 @@ export const categories = [
   { name: 'Gym', icon: <FitnessCenterIcon />, },
   { name: 'Piano', icon: <PianoIcon />, },
 ];
-
-export const demoThumbnailUrl = 'https://img.youtube.com/vi/_qGBZHoHSn4/0.jpg';
-export const demoChannelUrl = '/channel/UC8TOhkKba-QfA6WM5LQaQNw';
-export const demoVideoUrl = '/video/_qGBZHoHSn4';
-export const demoChannelTitle = 'Nguyễn Đức Thịnh';
-export const demoVideoTitle = 'Decision Tree ID3';
-export const demoProfilePicture = 'https://yt3.googleusercontent.com/ytc/AMLnZu8YPKNpGCfE4ZfECPYPaxT8SUTTUASjX5mchNtqwg=s176-c-k-c0x00ffffff-no-rj'
