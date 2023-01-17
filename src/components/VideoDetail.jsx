@@ -26,7 +26,7 @@ const VideoDetail = () => {
 	if (!videoDetail?.snippet) return 'Loading video';
 	if (!commentThread?.length) return 'Loading comment thread';
 
-	const { snippet: { title, channelId, channelTitle, description }, statistics: { viewCount, likeCount} } = videoDetail;
+	const { snippet: { title, channelId, channelTitle, description }, statistics: { viewCount, likeCount, commentCount} } = videoDetail;
 
 	return (
 		<Box minHeight="95vh">
@@ -65,7 +65,7 @@ const VideoDetail = () => {
 						<Box id="comment-thread" mt='30px'>
 							<Stack direction="column" gap="30px">
 								<Typography variant="h5" color="#fff" top="30px">
-									Comments
+									{commentCount.toLocaleString('en-US')} Comments
 								</Typography>
 								{commentThread.map((item, idx) => (
 									<Box key={idx}>
