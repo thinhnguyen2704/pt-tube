@@ -26,6 +26,7 @@ const VideoDetail = () => {
 	if (!videoDetail?.snippet) return 'Loading video';
 	if (!commentThread?.length) return 'Loading comment thread';
 
+	
 	const { snippet: { title, channelId, channelTitle, description }, statistics: { viewCount, likeCount, commentCount} } = videoDetail;
 
 	return (
