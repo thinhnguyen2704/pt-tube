@@ -6,7 +6,7 @@ const Comment = (comment) => {
 
 	return (
 		<Box>
-			<Stack direction="row">
+			<Stack direction="row" gap={1.5}>
 				<Link to={`/channel/${comment?.comment?.snippet?.channelId}`}>
 					<CardMedia
 						image={comment?.comment?.snippet?.topLevelComment?.snippet?.authorProfileImageUrl}
@@ -16,11 +16,11 @@ const Comment = (comment) => {
 				</Link>
 				<Stack direction="column">
 					<Link to={`/channel/${comment?.comment?.snippet?.channelId}`}>
-						<Typography variant="subtitle1" fontWeight="bold" color="#FFF">
-							{comment?.comment?.snippet?.authorDisplayName}
+						<Typography variant="subtitle2" fontWeight="bold" color="#FFF">
+							{comment?.comment?.snippet?.topLevelComment?.snippet?.authorDisplayName}
 						</Typography>
 					</Link>
-					<Typography color="#fff">
+					<Typography variant="body2" color="#fff">
 						{comment?.comment?.snippet?.topLevelComment?.snippet?.textDisplay}
 					</Typography>
 				</Stack>
