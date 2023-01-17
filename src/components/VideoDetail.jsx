@@ -30,7 +30,7 @@ const VideoDetail = () => {
 
 	return (
 		<Box minHeight="95vh">
-			<Stack direction={{ xs:'column', md:'row' }}>
+			<Stack direction={{ xs:'column', md:'row' }} marginLeft="2%">
 				<Stack id="top" direction="column">
 					<Box id="player" flex={1} >
 						<Box sx={{ top: '86px' }}>
@@ -44,7 +44,7 @@ const VideoDetail = () => {
 								<Link to={`/channel/${channelId}`}>
 									<Typography variant={{ sm: "subtitle6", md: "h6" }} color="#fff">
 										{channelTitle}
-										<CheckCircle sx={{ fontSize: '12px', color: 'gray', ml: '5px'}}/>
+										<CheckCircle sx={{ fontSize: '12px', color: 'gray', ml: '5px' }}/>
 									</Typography>
 								</Link>
 								<Stack direction="row" alignItems="center" gap="20px">
@@ -58,7 +58,7 @@ const VideoDetail = () => {
 							</Stack>
 							<Box backgroundColor="#282828" borderRadius="1px">
 								<Typography variant="body1" color="#fff" >
-									{description}
+									{description.toLocaleString()}
 								</Typography>
 							</Box>
 						</Box>
