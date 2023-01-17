@@ -36,7 +36,7 @@ const ChannelDetail = () => {
 					}} />
 					<ChannelCard channelDetail={channelDetail}/>
 				</Box>	
-				<Box sx={{ margin: 'auto' }}>
+				<Box sx={{ justifyContent:'center', alignItems:'center', marginLeft:'2%' }}>
 					<Box>
 						<Videos videos={videos} />
 					</Box>
