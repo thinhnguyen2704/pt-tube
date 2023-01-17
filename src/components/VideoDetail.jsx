@@ -42,9 +42,9 @@ const VideoDetail = () => {
 							</Typography>
 							<Stack direction="row" justifyContent="space-between" sx={{ color: "#fff" }} py={1} px={2}>
 								<Link to={`/channel/${channelId}`}>
-									<Typography variant={{ sm: "subtitle6", md: "h6" }} color="#fff">
+									<Typography variant={{ sm: "subtitle6", md: "h6" }} color="#fff" fontWeight="bold">
 										{channelTitle}
-										<CheckCircle sx={{ fontSize: '12px', color: 'gray', ml: '5px' }}/>
+										<CheckCircle sx={{ fontSize: '12px', color: '#606060', ml: '5px' }}/>
 									</Typography>
 								</Link>
 								<Stack direction="row" alignItems="center" gap="20px">
@@ -62,7 +62,7 @@ const VideoDetail = () => {
 								</Typography>
 							</Box>
 						</Box>
-						<Box id="comment-thread" marginTop='30px'>
+						<Box id="comment-thread" mt='30px'>
 							<Stack direction="column" gap="30px">
 								<Typography variant="h5" color="#fff" top="30px">
 									Comments
