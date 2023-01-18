@@ -6,16 +6,16 @@ const calculateElapsedTime = (publishedTime) => {
 
 	if(elapsedTime >= 31557600000) {
 		elapsedTime = Math.floor(elapsedTime/31557600000).toLocaleString('en-US');
-		return (elapsedTime >= 2) ? elapsedTime += " years ago" : elapsedTime += " year ago";
+		return (elapsedTime >= 2) ? elapsedTime += ' years ago' : elapsedTime += ' year ago';
 	} else if(elapsedTime >= 86400000) {
 		elapsedTime = Math.floor(elapsedTime/86400000).toLocaleString('en-US');
-		return (elapsedTime >= 2) ? elapsedTime += " months ago" : elapsedTime += " month ago";
+		return (elapsedTime >= 2) ? elapsedTime += ' months ago' : elapsedTime += ' month ago';
 	} else if(elapsedTime >= 3600000) {
 		elapsedTime = Math.floor(elapsedTime/3600000).toLocaleString('en-US');
-		return (elapsedTime >= 2) ? elapsedTime += " hours ago" : elapsedTime += " hour ago";
+		return (elapsedTime >= 2) ? elapsedTime += ' hours ago' : elapsedTime += ' hour ago';
 	} else {
 		elapsedTime = Math.floor(elapsedTime/60000).toLocaleString('en-US');
-		return (elapsedTime >= 2) ? elapsedTime += " minutes ago" : elapsedTime += " minute ago";
+		return (elapsedTime >= 2) ? elapsedTime += ' minutes ago' : elapsedTime += ' minute ago';
 	}
 }
 
@@ -30,7 +30,7 @@ const Comment = (comment) => {
 				<Link to={`/channel/${comment?.comment?.snippet?.topLevelComment?.snippet?.authorChannelId?.value}`}>
 					<CardMedia
 						image={comment?.comment?.snippet?.topLevelComment?.snippet?.authorProfileImageUrl}
-						sx={{ borderRadius: '50%', height: '40px', width: '40px', border: '1px solid #e3e3e3', margin:'auto'}}
+						sx={{ borderRadius: "50%", height: "40px", width: "40px", border: "1px solid #e3e3e3", margin:"auto"}}
 						component="img"
 					/>
 				</Link>
