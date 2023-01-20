@@ -28,6 +28,7 @@ const VideoDetail = () => {
 
 
 	const { snippet: { title, channelId, channelTitle, description }, statistics: { viewCount, likeCount, commentCount} } = videoDetail;
+	console.log(description, commentCount)
 
 	return (
 		<Box minHeight="95vh">
@@ -57,12 +58,11 @@ const VideoDetail = () => {
 									</Typography>
 								</Stack>
 							</Stack>
-							<Box backgroundColor="#282828" borderRadius="1px">
-								<Typography variant="body1" color="#fff" >
-									{description.toLocaleString()}
-								</Typography>
-							</Box>
 						</Box>
+						<Typography variant="body1" color="#fff" backgroundColor="#282828">
+							<div dangerouslySetInnerHTML={{ __html: description }}></div>
+						</Typography>
+
 						<Box id="comment-thread" mt="30px">
 							<Stack direction="column" gap="30px">
 								<Typography variant="h5" color="#fff" top="30px">
