@@ -14,7 +14,6 @@ const options = {
 
 export const fetchFromAPI = async (url) => {
 	
-	// Destructure response to only get the data
 	const { data } = await axios.get(`${BASE_URL}/${url}`, options);
 
 	return data;
