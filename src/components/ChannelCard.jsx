@@ -1,7 +1,7 @@
 import { Box, CardContent, CardMedia, Typography } from '@mui/material';
 import { CheckCircle } from '@mui/icons-material';
 
-const ChannelCard = ({ channelDetail, marginTop }) => {
+const ChannelCard = (channelDetail) => {
 	return (
 		<Box
 			sx={{ 
@@ -13,14 +13,15 @@ const ChannelCard = ({ channelDetail, marginTop }) => {
 				width: "350px",
 				height: "320px",
 				margin: "auto",
-				marginTop
+				left: "0",
+				right: "0"
 			}}
-		>
+	>
 		<CardContent sx={{ display: "flex", flexDirection: "column", justifyContent: "center", textAlign: "center", color: "#FFF" }}>
 			<CardMedia 
 				image={channelDetail?.snippet?.thumbnails?.medium?.url}
 				alt={channelDetail?.snippet?.title}
-				sx={{ borderRadius: "50%", height: "180px", width: "180px", border: "1px solid #e3e3e3", margin:"auto"}}
+				sx={{ borderRadius: "50%", height: "180px", width: "180px", border: "1px solid #e3e3e3"}}
 				component="img"
 			/>
 			<Typography variant="h6">
@@ -32,7 +33,7 @@ const ChannelCard = ({ channelDetail, marginTop }) => {
 						{parseInt(channelDetail?.statistics?.subscriberCount).toLocaleString('en-US')} Subscribers
 					</Typography>
 				)}
-				{channelDetail?.statistics?.subscriberCount && (
+				{channelDetail?.statistics?.videoCount && (
 					<Typography>
 						{parseInt(channelDetail?.statistics?.videoCount).toLocaleString('en-US')} Videos
 					</Typography>
