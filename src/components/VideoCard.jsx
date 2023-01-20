@@ -19,7 +19,7 @@ const VideoCard = (video) => {
 				<Stack direction="column">
 					<Link to={`/video/${videoId}`}>
 						<Typography variant="subtitle2" fontWeight="bold" color="#FFF">
-							{title.slice(0, 40)}
+							<div dangerouslySetInnerHTML={{__html: title.slice(0, 40)}}></div>
 						</Typography>
 					</Link>	
 					<Link to={`/channel/${channelId}`}>
