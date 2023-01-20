@@ -46,7 +46,7 @@ const Comment = (comment) => {
 						</Typography>
 					</Stack>
 					<Typography variant="body2" color="#fff">
-						{comment?.comment?.snippet?.topLevelComment?.snippet?.textDisplay.toLocaleString('en-US')}
+						<div dangerouslySetInnerHTML={{__html: comment?.comment?.snippet?.topLevelComment?.snippet?.textDisplay}}/>
 					</Typography>
 				</Stack>
 			</Stack>
