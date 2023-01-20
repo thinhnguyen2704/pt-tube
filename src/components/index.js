@@ -18,4 +18,5 @@ export { default as ChannelDetail } from './ChannelDetail';
 
 export { default as PlaylistCard} from './PlaylistCard';
 export { default as PlaylistDetail} from './PlaylistDetail';
+export { default as PlaylistVideos} from './PlaylistVideos';
 
