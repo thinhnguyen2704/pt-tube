@@ -59,8 +59,8 @@ const VideoDetail = () => {
 								</Stack>
 							</Stack>
 						</Box>
-						<Typography variant="body1" color="#fff" backgroundColor="#282828">
-							<div dangerouslySetInnerHTML={{ __html: description }}></div>
+						<Typography variant="body1" color="#fff" backgroundColor="#282828" borderRadius="5%">
+							<div dangerouslySetInnerHTML={{ __html: description }}/>
 						</Typography>
 
 						<Box id="comment-thread" mt="30px">
