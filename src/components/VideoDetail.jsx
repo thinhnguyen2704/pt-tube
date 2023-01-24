@@ -28,7 +28,6 @@ const VideoDetail = () => {
 
 
 	const { snippet: { title, channelId, channelTitle, description }, statistics: { viewCount, likeCount, commentCount} } = videoDetail;
-	console.log(description, commentCount)
 
 	return (
 		<Box minHeight="95vh">
