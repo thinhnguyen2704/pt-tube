@@ -1,23 +1,7 @@
 import { Box, CardMedia, Stack, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
 
-const calculateElapsedTime = (publishedTime) => {
-	var elapsedTime = new Date() - Date.parse(publishedTime);
-
-	if(elapsedTime >= 31557600000) {
-		elapsedTime = Math.floor(elapsedTime/31557600000).toLocaleString('en-US');
-		return (elapsedTime >= 2) ? elapsedTime += ' years ago' : elapsedTime += ' year ago';
-	} else if(elapsedTime >= 86400000) {
-		elapsedTime = Math.floor(elapsedTime/86400000).toLocaleString('en-US');
-		return (elapsedTime >= 2) ? elapsedTime += ' months ago' : elapsedTime += ' month ago';
-	} else if(elapsedTime >= 3600000) {
-		elapsedTime = Math.floor(elapsedTime/3600000).toLocaleString('en-US');
-		return (elapsedTime >= 2) ? elapsedTime += ' hours ago' : elapsedTime += ' hour ago';
-	} else {
-		elapsedTime = Math.floor(elapsedTime/60000).toLocaleString('en-US');
-		return (elapsedTime >= 2) ? elapsedTime += ' minutes ago' : elapsedTime += ' minute ago';
-	}
-}
+import calculateElapsedTime from '../utils/calculateElapsedTime';
 
 const Comment = (comment) => {
 	if (!comment) return 'Loading comments';
