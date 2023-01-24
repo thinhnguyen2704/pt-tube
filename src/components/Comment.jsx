@@ -1,4 +1,4 @@
-import { Box, CardMedia, Stack, Typography } from '@mui/material';
+import { Avatar, Box, Stack, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
 
 import calculateElapsedTime from '../utils/calculateElapsedTime';
@@ -12,10 +12,9 @@ const Comment = (comment) => {
 		<Box>
 			<Stack direction="row" gap={1.5}>
 				<Link to={`/channel/${comment?.comment?.snippet?.topLevelComment?.snippet?.authorChannelId?.value}`}>
-					<CardMedia
-						image={comment?.comment?.snippet?.topLevelComment?.snippet?.authorProfileImageUrl}
-						sx={{ borderRadius: "50%", height: "40px", width: "40px", border: "1px solid #e3e3e3", margin:"auto"}}
-						component="img"
+					<Avatar
+						src={comment?.comment?.snippet?.topLevelComment?.snippet?.authorProfileImageUrl}
+						alt={comment?.comment?.snippet?.topLevelComment?.snippet?.authorDisplayName}
 					/>
 				</Link>
 				<Stack direction="column">
@@ -30,7 +29,7 @@ const Comment = (comment) => {
 						</Typography>
 					</Stack>
 					<Typography variant="body2" color="#fff">
-						<div dangerouslySetInnerHTML={{__html: comment?.comment?.snippet?.topLevelComment?.snippet?.textDisplay}}/>
+						<div dangerouslySetInnerHTML={{ __html: comment?.comment?.snippet?.topLevelComment?.snippet?.textDisplay }}/>
 					</Typography>
 				</Stack>
 			</Stack>
