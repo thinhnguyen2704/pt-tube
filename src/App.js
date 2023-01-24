@@ -8,12 +8,12 @@ const App = () => (
 		<Box sx={{backgroundColor: "#000"}}>
 			<Navbar />
 			<Routes>
-				<Route path="/" exact element={<Feed />} />
-				<Route path="/video/:id" element={<VideoDetail />} />
-				<Route path="/channel/:id" element={<ChannelDetail />} />
-				<Route path="/playlist/:id" element={<PlaylistVideos />} />
-				<Route path="/video/:id&list=:id" elemetn={<PlaylistDetail />} />
-				<Route path="/search/:searchTerm" element={<SearchFeed />} />
+				<Route path='/' exact element={<Feed />} />
+				<Route path='/video/:id' element={<VideoDetail />} />
+				<Route path='/channel/:id' element={<ChannelDetail />} />
+				<Route path='/playlist/:id' element={<PlaylistVideos />} />
+				<Route path='/video/:videoId&list=:playlistId' elemetn={<PlaylistDetail />} />
+				<Route path='/search/:searchTerm' element={<SearchFeed />} />
 			</Routes>
 		</Box>
 	</BrowserRouter>
