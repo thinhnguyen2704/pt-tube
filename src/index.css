@@ -87,4 +87,8 @@ a {
   .scroll-horizontal {
     overflow: auto !important;
   }
+
+  .search-bar {
+    width: 100px;
+  }
 }
