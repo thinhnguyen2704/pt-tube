@@ -13,7 +13,7 @@ const SearchBar = () => {
     if (searchTerm) {
       navigate(`/search/${searchTerm}`);
 
-      setSearchTerm('');
+      setSearchTerm(searchTerm);
     }
   };
 
@@ -27,6 +27,7 @@ const SearchBar = () => {
         pl: 2,
         boxShadow: 'none',
         mr: { sm: 5 },
+        direction: 'row',
       }}
     >
       <input
