@@ -13,8 +13,7 @@ import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
 import PianoIcon from '@mui/icons-material/Piano';
 
 export const categories = [
-  { name: 'All', icon: <HomeIcon /> },
-  { name: 'ReactJS', icon: <CodeIcon /> },
+  { name: 'Home', icon: <HomeIcon /> },
   { name: 'Music', icon: <MusicNoteIcon /> },
   { name: 'Education', icon: <SchoolIcon /> },
   { name: 'Podcast', icon: <GraphicEqIcon /> },
