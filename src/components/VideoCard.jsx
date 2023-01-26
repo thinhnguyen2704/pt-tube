@@ -20,7 +20,8 @@ const VideoCard = ({ video, videoId }) => {
   return (
     <Card
       sx={{
-        width: { xs: '100%', sm: '175px', md: '250px' },
+        width: { xs: '100%', sm: '150px', md: '200px' },
+				maxWidth: '250px',
         boxShadow: 'none',
         borderRadius: '5%',
         margin: 'auto',
@@ -31,7 +32,7 @@ const VideoCard = ({ video, videoId }) => {
           image={url}
           alt={title}
           sx={{
-            width: { xs: '100%', sm: '175px', md: '250px' },
+            width: { xs: '100%', sm: '150px', md: '200px' },
             height: '160px',
           }}
           component='img'
