@@ -2,6 +2,7 @@ import { Box, CardContent, CardMedia, Typography } from '@mui/material';
 import { CheckCircle } from '@mui/icons-material';
 
 const ChannelCard = (channelDetail) => {
+	console.log(channelDetail)
 	return (
 		<Box
 			sx={{ 
@@ -17,7 +18,7 @@ const ChannelCard = (channelDetail) => {
 				right: "0"
 			}}
 	>
-		<CardContent sx={{ display: "flex", flexDirection: "column", justifyContent: "center", textAlign: "center", color: "#FFF" }}>
+		<CardContent sx={{ display: "flex", flexDirection: "column", justifyContent: "center", textAlign: "center", color: "#fff" }}>
 			<CardMedia 
 				image={channelDetail?.snippet?.thumbnails?.medium?.url}
 				alt={channelDetail?.snippet?.title}
