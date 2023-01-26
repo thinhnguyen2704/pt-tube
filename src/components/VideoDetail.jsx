@@ -36,6 +36,7 @@ const VideoDetail = () => {
     snippet: { title, channelId, channelTitle, description },
     statistics: { viewCount, likeCount, commentCount },
   } = videoDetail;
+	
   document.title = title;
 
   return (
