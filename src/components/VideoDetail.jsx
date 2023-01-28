@@ -64,7 +64,7 @@ const VideoDetail = () => {
                 py={1}
                 px={2}
               >
-                <Link to={`/channel/${channelId}`}>
+                <Link to={`/ptube/channel/${channelId}`}>
                   <Typography
                     variant={{ sm: 'subtitle6', md: 'h6' }}
                     color='#fff'

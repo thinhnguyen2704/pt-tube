@@ -14,7 +14,7 @@ const Comment = (comment) => {
     <Box>
       <Stack direction='row' gap={1.5}>
         <Link
-          to={`/channel/${comment?.comment?.snippet?.topLevelComment?.snippet?.authorChannelId?.value}`}
+          to={`/ptube/channel/${comment?.comment?.snippet?.topLevelComment?.snippet?.authorChannelId?.value}`}
         >
           <Avatar
             src={
@@ -30,7 +30,7 @@ const Comment = (comment) => {
         <Stack direction='column'>
           <Stack direction='row' gap={1.5}>
             <Link
-              to={`/channel/${comment?.comment?.snippet?.topLevelComment?.snippet?.authorChannelId?.value}`}
+              to={`/ptube/channel/${comment?.comment?.snippet?.topLevelComment?.snippet?.authorChannelId?.value}`}
             >
               <Typography variant='subtitle2' fontWeight='bold' color='#FFF'>
                 {

@@ -38,7 +38,7 @@ const PlaylistCard = (playlist) => {
       }}
     >
       <Box sx={{ position: 'relative' }}>
-        <Link to={`/playlist/${playlistId}`}>
+        <Link to={`/ptube/playlist/${playlistId}`}>
           <CardMedia
             image={url}
             alt={title}
@@ -65,12 +65,12 @@ const PlaylistCard = (playlist) => {
       </Box>
       <CardContent sx={{ bgcolor: '#1e1e1e', height: '70px' }}>
         <Stack direction='column'>
-          <Link to={`/playlist/${playlistId}`}>
+          <Link to={`/ptube/playlist/${playlistId}`}>
             <Typography variant='subtitle2' fontWeight='bold' color='#fff'>
               <div dangerouslySetInnerHTML={{ __html: title.slice(0, 40) }} />
             </Typography>
           </Link>
-          <Link to={`/channel/${channelId}`}>
+          <Link to={`/ptube/channel/${channelId}`}>
             <Typography variant='subtitle2' fontWeight='bold' color='gray'>
               {channelTitle}
               <CheckCircle sx={{ fontSize: 11, color: 'gray', ml: '5px' }} />

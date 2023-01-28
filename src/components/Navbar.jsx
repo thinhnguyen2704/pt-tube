@@ -16,7 +16,7 @@ const Navbar = () => (
       zIndex: '1000',
     }}
   >
-    <Link to='/' style={{ display: 'flex', alignItems: 'center' }}>
+    <Link to='/ptube' style={{ display: 'flex', alignItems: 'center' }}>
       <img
         src='https://cdn2.iconfinder.com/data/icons/social-aquiocons/512/Aquicon-Youtube.png'
         alt='logo'

@@ -27,7 +27,7 @@ const VideoCard = ({ video, videoId }) => {
         margin: 'auto',
       }}
     >
-      <Link to={`/video/${videoId}`}>
+      <Link to={`/ptube/video/${videoId}`}>
         <CardMedia
           image={url}
           alt={title}
@@ -40,14 +40,14 @@ const VideoCard = ({ video, videoId }) => {
       </Link>
       <CardContent sx={{ backgroundColor: '#1e1e1e', height: '70px' }}>
         <Stack direction='column'>
-          <Link to={`/video/${videoId}`}>
+          <Link to={`/ptube/video/${videoId}`}>
             <Typography variant='subtitle2' fontWeight='bold' color='#fff'>
               <div
                 dangerouslySetInnerHTML={{ __html: title.slice(0, 40) }}
               ></div>
             </Typography>
           </Link>
-          <Link to={`/channel/${channelId}`}>
+          <Link to={`/ptube/channel/${channelId}`}>
             <Typography variant='subtitle2' fontWeight='bold' color='gray'>
               {channelTitle}
               <CheckCircle sx={{ fontSize: 11, color: 'gray', ml: '5px' }} />

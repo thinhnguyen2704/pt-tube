@@ -15,11 +15,11 @@ const App = () => (
     <Box sx={{ backgroundColor: '#000' }}>
       <Navbar />
       <Routes>
-        <Route path='/' exact element={<Feed />} />
-        <Route path='/video/:id' element={<VideoDetail />} />
-        <Route path='/channel/:id' element={<ChannelDetail />} />
-        <Route path='/playlist/:id' element={<PlaylistVideos />} />
-        <Route path='/search/:searchTerm' element={<SearchFeed />} />
+        <Route path='/ptube' exact element={<Feed />} />
+        <Route path='/ptube/video/:id' element={<VideoDetail />} />
+        <Route path='/ptube/channel/:id' element={<ChannelDetail />} />
+        <Route path='/ptube/playlist/:id' element={<PlaylistVideos />} />
+        <Route path='/ptube/search/:searchTerm' element={<SearchFeed />} />
       </Routes>
     </Box>
   </BrowserRouter>
