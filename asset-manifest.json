@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ptube/static/css/main.e7ddadb0.css",
+    "main.js": "/ptube/static/js/main.24d9475c.js",
+    "index.html": "/ptube/index.html",
+    "main.e7ddadb0.css.map": "/ptube/static/css/main.e7ddadb0.css.map",
+    "main.24d9475c.js.map": "/ptube/static/js/main.24d9475c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e7ddadb0.css",
+    "static/js/main.24d9475c.js"
+  ]
+}
